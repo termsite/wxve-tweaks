@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <div class="container">
         <h1 class="title animate-fadein">Wxve Tweaks V2</h1>
         <p class="subtitle animate-slideup">Vibes only, enjoy the music while you browse our tweaks.</p>
@@ -49,5 +55,9 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        // Adjust background music volume
+        document.getElementById('background-music').volume = 0.3; // Set volume to 30%
+    </script>
 </body>
 </html>

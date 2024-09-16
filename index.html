@@ -3,59 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WXVE - TWEAKS</title>
+    <title>Wxve Tweaks V2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Wxve Tweaks</div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#download">Download</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Welcome to Wxve Tweaks</h1>
-            <p>The best pc tweaks for ultimate fps and gaming experience.</p>
-            <a href="#download" class="cta-button">Download Now</a>
+    <div class="container">
+        <h1 class="title animate-fadein">Wxve Tweaks V2</h1>
+        <p class="subtitle animate-slideup">Vibes only, enjoy the music while you browse our tweaks.</p>
+        
+        <!-- Big Green Download Button -->
+        <div class="btn-container animate-bounce">
+            <a href="https://github.com/termsite/wxve-tweaks/releases/download/main/WaveFpsUnlocker.exe" class="download-btn">Download V2</a>
         </div>
-    </header>
 
-    <section id="features" class="features">
-        <div class="feature">
-            <div class="feature-icon">🚀</div>
-            <h2>Feature One</h2>
-            <p>Made by a known solo-developer.</p>
+        <!-- Embedded Video Section -->
+        <div class="video-section">
+            <h2 class="video-title">Version 2 Preview:</h2>
+            <div class="video-wrapper">
+                <!-- Embed YouTube Video -->
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/eFoo4nbRgM4?si=EX6pTzKdduWL56Hj" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="feature">
-            <div class="feature-icon">🔧</div>
-            <h2>Feature Two</h2>
-            <p>Very secure.</p>
+
+        <!-- Scroll Button -->
+        <div class="scroll-section">
+            <button class="scroll-btn" onclick="toggleDropdown()">Show Previous Versions</button>
+            <div id="dropdown" class="dropdown-menu">
+                <ul>
+                    <li><a href="https://github.com/termsite/wavetweaks/releases/download/yes/WaveTweaksV1.zip">Download V1.0</a></li>
+                    <li><a href="https://github.com/termsite/wavetweaks/releases/download/yes/WaveTweaksV1.zip">Download V1.5</a></li>
+                    <li><a href="https://github.com/termsite/wavetweaks/releases/download/yes/WaveTweaksV1.zip">Download V1.9</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="feature">
-            <div class="feature-icon">📈</div>
-            <h2>Feature Three</h2>
-            <p>Extremely fasts.</p>
-        </div>
-    </section>
 
-    <section id="about" class="about">
-        <h2>About Wxve</h2>
-        <p>I wanted to make everyone experience the game the same.<br>So I founded wxve tweaks to help everyone get high fps!</p>
-    </section>
+        <!-- Background Music -->
+        <audio id="background-music" autoplay loop>
+            <source src="yeat_song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
-    <section id="download" class="download">
-        <h2>Download Wxve Fps Unlocker</h2>
-        <p>Get the latest version of Wxve Fps Unlocker now!<br>Your anti-virus might think it's a virus but it's not, Even my anti-virus thinks it is.</p>
-        <a href="https://github.com/termsite/wxve-tweaks/releases/download/main/WaveFpsUnlocker.exe" class="cta-button">Download</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 wxvveess Inc. All rights reserved.</p>
-    </footer>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -6,24 +6,32 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    background: linear-gradient(135deg, #4caf50, #8bc34a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    padding: 20px;
-    text-align: center;
-    box-shadow: inset 0 0 100px rgba(0, 255, 0, 0.6);
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensures the video stays in the background */
+    object-fit: cover;
 }
 
 /* Container */
 .container {
+    position: relative;
+    z-index: 1; /* Keeps content above the video */
     max-width: 900px;
     color: white;
-    margin-top: 50px;
+    text-align: center; /* Center text and buttons */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 50px 20px; /* Add padding for spacing */
 }
 
 /* Title and Subtitle */
@@ -31,17 +39,18 @@ body {
     font-size: 4rem;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .subtitle {
     font-size: 1.5rem;
-    margin: 10px 0 30px;
     color: #e8f5e9;
+    margin-bottom: 30px;
 }
 
 /* Download Button */
 .btn-container {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .download-btn {
@@ -62,7 +71,7 @@ body {
 
 /* Video Section */
 .video-section {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .video-title {
@@ -90,8 +99,7 @@ body {
 
 /* Scroll Section */
 .scroll-section {
-    margin-top: 50px;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 .scroll-btn {
@@ -163,4 +171,10 @@ body {
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
+}
+
+/* New animation for dropdown */
+@keyframes slideDown {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 500px; opacity: 1; }
 }
